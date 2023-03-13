@@ -7,3 +7,4 @@ export const  LazyPage01 = ()=> {
 }
 
 
+export default LazyPage01
