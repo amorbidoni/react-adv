@@ -24,12 +24,12 @@ function LazyLayout() {
                     </NavLink>
                 </li>
             </ul>
-            <Routes>
-                <Route path='lazy1' element={<LazyPage01/>}/>
-                <Route path='lazy2' element={<LazyPage02/>}/>
-                <Route path='lazy3' element={<LazyPage03/>}/>
-                <Route path='/*' element={<Navigate to={'lazy1'} replace/>}/>
-            </Routes>
+                <Routes>
+                    <Route path='lazy1' element={<LazyPage01/>}/>
+                    <Route path='lazy2' element={<LazyPage02/>}/>
+                    <Route path='lazy3' element={<LazyPage03/>}/>
+                    <Route path='/*' element={<Navigate to={'lazy1'} replace/>}/>
+                </Routes>
         </div>
     )
 }
