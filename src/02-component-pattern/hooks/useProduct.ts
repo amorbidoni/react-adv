@@ -8,15 +8,9 @@ interface useProductArgs{
 export const useProduct = ({onChange, product, value = 0}: useProductArgs)=>{
     const [counter, setCounter] = useState( value );
     
-    const isControlled = useRef<boolean>(!!onChange)
-
-   
 
     function increaseBy(value:number){ 
         
-        if(isControlled.current){
-            return onChange!({count:value, product});
-        }
         const newValue = Math.max(counter + value, 0)
         setCounter(newValue)
         onChange && onChange({product, count: newValue});
